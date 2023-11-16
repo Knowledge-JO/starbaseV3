@@ -31,7 +31,7 @@ const Hero = () => {
         </h1>
       </div>
       <p className="text-center mt-3">
-        Creating your token for your dream project with just few click
+        Creating your token for your dream project with just few clicks
       </p>
     </div>
   );

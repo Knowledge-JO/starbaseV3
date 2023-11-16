@@ -17,7 +17,7 @@ const Form = () => {
   };
   return (
     <div className="mb-10">
-      <FormCounter />
+      <FormCounter currStep={currStep} />
       {currStep == 1 && <Form1 />}
       {currStep == 2 && <Form2 />}
       {currStep == 3 && <Form3 />}
