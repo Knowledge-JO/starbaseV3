@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 const FormCounter = ({ currStep }) => {
   return (
     <div className="text-white px-10 flex justify-center mt-[50px]">

@@ -5,14 +5,14 @@ const Button = ({ currStep, onNextStep, onPreviousStep }) => {
       {currStep > 1 && (
         <button
           onClick={onPreviousStep}
-          className="relative bottom-[-15%] mr-5 bg-[#262626] hover:bg-[#3676E1] px-5 py-2 w-[100px] rounded-lg transition ease-in duration-300"
+          className="relative bottom-[-15%] mr-5 bg-[#262626] hover:bg-red-500 px-5 py-2 w-[100px] rounded-lg transition ease-in duration-300"
         >
           Previous
         </button>
       )}
       <button
         onClick={onNextStep}
-        className="relative bottom-[-15%] bg-[#262626] hover:bg-[#3676E1] px-5 py-2 w-[100px] rounded-lg transition ease-in duration-300"
+        className="relative bottom-[-15%] bg-[#262626] hover:bg-red-500 px-5 py-2 w-[100px] rounded-lg transition ease-in duration-300"
       >
         Next
       </button>
