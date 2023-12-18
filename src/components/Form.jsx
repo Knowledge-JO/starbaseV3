@@ -10,7 +10,6 @@ import { useReducer, useState } from "react";
 
 // create useReducer hook here to manage state for the entire form so as to prevent clearing of state when a form component is unmounted.
 
-
 const initialState = {
   sliderState1: false,
   sliderState2: false,
@@ -28,7 +27,6 @@ const reducer = (state, action) => {
     default:
       return initialState
   }
-  
 }
 
 const Form = () => {

@@ -17,16 +17,16 @@ const Navbar = () => {
           <img className="w-[150px]" src={logo} alt="Logo" />
         </a>
         <ul className="hidden lg:flex">
-          <li className="cursor-pointer mr-[50px] relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-[#3676E1] hover:before:w-[100%] before:transition-width before:duration-500">
+          <li className="cursor-pointer mr-[50px] relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-red-500 hover:before:w-[100%] before:transition-width before:duration-500">
             Home
           </li>
-          <li className="cursor-pointer mr-[50px] relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-[#3676E1] hover:before:w-[100%] before:transition-width before:duration-500">
+          <li className="cursor-pointer mr-[50px] relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-red-500 hover:before:w-[100%] before:transition-width before:duration-500">
             Docs
           </li>
-          <li className="cursor-pointer mr-[50px] relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-[#3676E1] hover:before:w-[100%] before:transition-width before:duration-500">
+          <li className="cursor-pointer mr-[50px] relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-red-500 hover:before:w-[100%] before:transition-width before:duration-500">
             Dashboard
           </li>
-          <li className="cursor-pointer relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-[#3676E1] hover:before:w-[100%] before:transition-width before:duration-500">
+          <li className="cursor-pointer relative before:content-[''] before:absolute before:bottom-0 before:w-[0%] before:h-[2px] before:bg-red-500 hover:before:w-[100%] before:transition-width before:duration-500">
             Deployer
           </li>
         </ul>
