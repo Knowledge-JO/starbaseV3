@@ -39,12 +39,10 @@ const Form = () => {
 
   const handelNextStep = () => {
     if (currStep < totalSteps) setCurrStep((currStep) => currStep + 1);
-    dispatch({type: "slider1", payload: true})
   };
 
   const handlePreviousStep = () => {
     if (currStep > 1) setCurrStep((currStep) => currStep - 1);
-    dispatch({type: "sliderState2", payload: true})
   };
 
   return (
