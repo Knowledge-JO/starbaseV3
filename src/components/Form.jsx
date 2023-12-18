@@ -13,7 +13,9 @@ import { useReducer, useState } from "react";
 const initialState = {
   sliderState1: false,
   sliderState2: false,
-  sliderState3: false
+  sliderState3: false,
+  buyTaxSlide: false,
+  sellTaxSlide: false
 }
 
 const reducer = (state, action) => {
@@ -24,6 +26,11 @@ const reducer = (state, action) => {
       return {...state, sliderState2: !state.sliderState2}
     case "slider3":
       return {...state, sliderState3: !state.sliderState3}
+    case "buyTaxSlide":
+      return {...state, buyTaxSlide: !state.buyTaxSlide}
+    case "sellTaxSlide":
+      return {...state, sellTaxSlide: !state.sellTaxSlide}
+
     default:
       return initialState
   }
@@ -49,7 +56,7 @@ const Form = () => {
       {currStep == 1 && <Form1 />}
       {currStep == 2 && <Form2 />}
       {currStep == 3 && <Form3 state={state} dispatch={dispatch}/>}
-      {currStep == 4 && <Form4 />}
+      {currStep == 4 && <Form4 state={state} dispatch={dispatch}/>}
       {/* {currStep == 5 && <Success />} */}
       <Button
         onNextStep={handelNextStep}
