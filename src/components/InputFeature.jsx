@@ -22,6 +22,7 @@ const InputFeature = ({ feature, label, state, children }) => {
             className={`bg-[#262626] h-[40px] w-[100%] rounded-md px-7 ring-1 ring-gray-700 focus:outline focus:outline-red-500`}
             type="number"
             min={1}
+            max={100}
             id="max-token"
           />
           <span className="absolute top-0 h-full flex items-center pl-3">

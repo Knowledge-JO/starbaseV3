@@ -1,49 +1,20 @@
+import { formInputs } from "../../constants";
+
 const Form1 = () => {
   return (
     <div className="text-white px-10 md:px-[100px]  mt-[30px]">
       <h1 className="font-bold text-[30px] text-center mb-10">Coin Setup</h1>
 
       <div className="grid grid-cols-1 min-[700px]:grid-cols-2 md:grid-cols-3 justify-items-center gap-x-5 gap-y-10">
-        <InputForm1
-          label="Token Name"
-          id="name"
-          placeholder="token name"
-          isRequired={true}
-        />
-        <InputForm1
-          label="Token Symbol"
-          id="symbol"
-          placeholder="token symbol"
-          isRequired={true}
-        />
-
-        <InputForm1
-          label="Total Supply"
-          id="supply"
-          placeholder="total supply"
-          isRequired={true}
-        />
-
-        <InputForm1
-          label="Telegram"
-          id="telegram"
-          placeholder="telegram group link"
-          isRequired={true}
-        />
-
-        <InputForm1
-          label="Twitter"
-          id="twitter"
-          placeholder="twitter.com/accountusername"
-          isRequired={false}
-        />
-
-        <InputForm1
-          label="Website"
-          id="website"
-          placeholder="website URL"
-          isRequired={false}
-        />
+        {formInputs.map((formInput) => (
+          <InputForm1
+            key={formInput.id}
+            label={formInput.label}
+            id={formInput.id}
+            placeholder={formInput.placeholder}
+            isRequired={formInput.isRequired}
+          />
+        ))}
 
         <div className=" w-[100%] col-span-1 min-[700px]:col-span-2 md:col-span-3">
           <label htmlFor="description" className="block text-sm mb-1">
